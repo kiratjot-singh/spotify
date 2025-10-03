@@ -1,0 +1,79 @@
+.artistcard {
+  width: 150px;                
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.artistcard:hover {
+  transform: scale(1.05);
+  background-color: #1a1a1a;
+}
+
+.imagewrapper {
+  position: relative;         
+  width: 120px;               /* circular image size */
+  height: 120px;
+  border-radius: 50%;          /* keep circular */
+  overflow: hidden;
+}
+
+.artistimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;          /* maintain circle */
+}
+
+.artistname {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-top: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Play button at bottom-right of circular image */
+.playbutton {
+  position: absolute;
+  bottom: 5px;               
+  right: 5px;                
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #1db954;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;                
+  transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.imagewrapper:hover .playbutton {
+  opacity: 1;                
+}
+
+.playbutton:hover .playicon {
+  transform: scale(1.2);     
+  filter: brightness(1.2);   
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+
+
+
+
+

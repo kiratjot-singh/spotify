@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  padding: 10px 20px;
+  height: 60px;
+  color: #b3b3b3;
+}
+
+/* Left section: logo + home */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #000;
+  padding: 0 10px;
+  border-radius: 8px;
+}
+
+.logo {
+  height: 35px;
+  cursor: pointer;
+}
+
+.home {
+  background: #000;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.home:hover {
+  transform: scale(1.1);
+}
+
+.home-icon {
+  height: 28px;
+  filter: invert(1);
+}
+
+/* Center section: search */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.search-box {
+  width: 60%;
+  max-width: 500px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #b3b3b3;
+  outline: none;
+  font-size: 14px;
+  background-color: #121212;
+  color: #b3b3b3;
+  transition: all 0.3s;
+}
+
+.search-box::placeholder {
+  color: #888;
+}
+
+.search-box:hover {
+  border-color: #1db954;
+}
+
+.search-box:focus {
+  border-color: #1db954;
+  box-shadow: 0 0 5px #1db954;
+}
+
+/* Right section buttons (unchanged) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right button {
+  background: transparent;
+  border: none;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-right button:hover {
+  color: #1db954;
+}
+
+/* Sign up button special (unchanged) */
+.sign {
+  font-weight: bold;
+}
+
+.login {
+  border: none;
+  border-radius: 20px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: #fff;   /* white background */
+    color: #000;
+}
+
+.login:hover {
+  background: #fff;   /* background white hi rahega */
+  color: #1db954;     /* text green ho jaavega */
+}
+
+
+
